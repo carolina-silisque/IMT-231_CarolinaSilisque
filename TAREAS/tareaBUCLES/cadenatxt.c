@@ -6,7 +6,7 @@ int main(void) {
     int nletras;
 
     printf("Ingrese una palabra: ");
-    scanf("%s", palabra); 
+    scanf("%c", palabra); 
 
     nletras = strlen(palabra);
 
