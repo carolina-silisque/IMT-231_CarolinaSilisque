@@ -8,24 +8,20 @@ El programa termina cuando el usuario ingresa dos ceros.*/
 
 int main(void){
 int n1, n2;
+int resultado;
     while(1){
 
         printf("ingrese el primer numero: \n");
         scanf ("%d", &n1);
         printf("ingrese el segundo numero: \n");
         scanf ("%d", &n2);
-        if (n1 < n2){
-            printf("el primer numero %d es menor que el segundo numero %d \n", n1, n2);
-        }else if(n1>n2){
-            printf("el primer numero %d es mayor que el segundo numero %d \n", n1, n2);
-        }else if (n1==n2){
-            printf("los numeros son iguales \n");
-        }
+
+
+        resultado =  comparar_numeros( n1,  n2);
         if (n1==0 && n2==0){
-            printf("fin del programa \n");
+            printf("fin del programa \n\n");
             break;
         }
-    
     
     }
 

@@ -17,7 +17,7 @@ int main(void){
     
         scanf("%d", &opcion);
         if (opcion>4){
-            printf("Opcion invalida selecciones un numero entre 1 y 4 \n");
+            printf("Opcion in0valida selecciones un numero entre 1 y 4 \n");
         }
 
         if (opcion >= 1 && opcion <= 4) {

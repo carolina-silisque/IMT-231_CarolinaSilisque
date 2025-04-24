@@ -53,3 +53,21 @@ int comparador(int num1, int num2){
     
 }
 // Función que compara dos números y devuelve 0 si son iguales, 1 si el primero es mayor y -1 si el segundo es mayor`   
+
+int comparar_numeros(int num1, int num2) {
+
+    if (num1 > num2) {
+
+        printf("el primer numero es mayor que el segundo.(%d>%d) \n\n", num1, num2);
+
+    } else if (num1 < num2) {
+
+        printf("el segundo numero es mayor que el primero.(%d>%d)  \n\n", num2, num1);
+
+    } else if (num1 == num2 && num1 !=0 && num2 !=0) {
+
+        printf("Los números son iguales.\n\n");
+
+    }
+
+}

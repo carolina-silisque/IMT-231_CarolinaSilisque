@@ -1,28 +1,27 @@
 // Simulación de semáforo
 #include <stdio.h>
 
+typedef enum { ROJO, VERDE, AMARILLO } semaforo; 
 
-int main(void){
-    typedef enum {rojo, verde, amarillo } semaforo;
+int main(void) {
+    semaforo estado = ROJO; 
+    int ciclos = 10; 
 
-    semaforo estado = rojo;
-    int ciclos = 0;
-
-    while (ciclos < 10){
-
-        if(estado == rojo){
-            printf("El semaforo se encuentra en Rojo 'PARE' \n");
-            estado = verde;
-
-        } else if(estado == verde){
-            printf("El semaforo se encuentra en verde 'AVANZE' \n");
-            estado = amarillo;
-
-        } else if(estado == amarillo){
-            printf("El semaforo se encuentra en Amarillo 'PRECAUCION' \n");
-            estado = rojo;    
+    for (int i = 0; i < ciclos; i++) {
+        if (estado == ROJO) {
+            printf("El semáforo se encuentra en ROJO 'PARE'\n");
+            estado = VERDE; 
+            
+        } else if (estado == VERDE) {
+            printf("El semáforo se encuentra en VERDE 'AVANCE'\n");
+            estado = AMARILLO; 
+            
+        } else if (estado == AMARILLO) {
+            printf("El semáforo se encuentra en AMARILLO 'PRECAUCIÓN'\n");
+            estado = ROJO; 
         }
-        ciclos ++;
+        
     }
+
     return 0;
 }
