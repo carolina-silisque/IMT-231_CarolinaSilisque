@@ -30,3 +30,50 @@ float division(float num1, float num2) {
     }
 }
 
+
+
+
+// 7. Función para generar la secuencia de Fibonacci
+int fibonacci(int n) {
+    int a = 0, b = 1, siguiente;
+    printf("Secuencia de Fibonacci hasta %d: ", n);
+    while (a <= n) {
+        printf("%d ", a);
+        siguiente = a + b;
+        a = b;
+        b = siguiente;
+    }
+    printf("\n");
+}
+
+// 8. Función para calcular la potencia de un número
+double potencia(double base, int exponente) {
+    double resultado = 1;
+    for (int i = 0; i < exponente; i++) {
+        resultado *= base;
+    }
+    return resultado;
+}
+
+// 9. Función para contar las vocales en una cadena
+int contarVocales(const char *cadena) {
+    int contador = 0;
+    for (int i = 0; i < strlen(cadena); i++) {
+        char c = tolower(cadena[i]);
+        if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+            contador++;
+        }
+    }
+    return contador;
+}
+
+// 10. Función para invertir una cadena de texto
+void invertirCadena(char *cadena) {
+    int longitud = strlen(cadena);
+    for (int i = 0; i < longitud / 2; i++) {
+        char temp = cadena[i];
+        cadena[i] = cadena[longitud - i - 1];
+        cadena[longitud - i - 1] = temp;
+    }
+}
+
