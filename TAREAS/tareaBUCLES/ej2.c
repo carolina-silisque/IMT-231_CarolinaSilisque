@@ -12,7 +12,7 @@ int main(void) {
     for (int i = 1; i <= N; i++) {
         suma += i; 
     }
-
+    
     printf("La suma de los primeros %d números naturales es: %d\n", N, suma);
     return 0;
 }
