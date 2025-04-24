@@ -84,3 +84,16 @@ int factorial(int num){
     }
     printf("el factorial del numero(%d), es %d\n\n", num, factorial);
 }
+
+// Implementación de la función para invertir el número
+int invertir_numero(int numero) {
+    int invertido = 0;
+
+    while (numero > 0) {
+        int digito = numero % 10; // Obtener el último dígito
+        invertido = invertido * 10 + digito; // Agregar el dígito al número invertido
+        numero /= 10; // Eliminar el último dígito del número original
+    }
+
+    return invertido;
+}
