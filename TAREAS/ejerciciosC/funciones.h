@@ -16,5 +16,6 @@ int contarDigitos(int num);
 int comparador(int num1, int num2);
 int comparar_numeros(int num1, int num2);
 
-
+int multiplo3 (int num);
+int factorial(int num);
 #endif

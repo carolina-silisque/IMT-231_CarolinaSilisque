@@ -71,3 +71,16 @@ int comparar_numeros(int num1, int num2) {
     }
 
 }
+
+int multiplo3 (int num){
+    return num %3 == 0;
+}
+
+int factorial(int num){
+    int factorial=1;
+
+    for (int i=1; i<=num ;i++){
+        factorial = factorial*i;
+    }
+    printf("el factorial del numero(%d), es %d\n\n", num, factorial);
+}
