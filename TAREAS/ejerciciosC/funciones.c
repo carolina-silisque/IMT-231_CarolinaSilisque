@@ -14,6 +14,7 @@ int resta(int numero1, int numero2){
     int respuesta = numero1-numero2;
     return respuesta;
 }
+
 int multiplicacion(int numero1, int numero2){
     int respuesta = numero1 * numero2;
     return respuesta;
@@ -30,7 +31,7 @@ float division(float num1, float num2) {
     }
 }
 int parImpar (int num){
-    return num %2==0;
+    return num %2 == 0;
 }
 
 // Función que cuenta cuántos dígitos tiene un número
@@ -44,3 +45,11 @@ int contarDigitos(int num) {
     return contador;
 }
 
+int comparador(int num1, int num2){
+
+        if (num1 == num2) return 0;
+        else if (num1 > num2) return 1;
+        else return -1;
+    
+}
+// Función que compara dos números y devuelve 0 si son iguales, 1 si el primero es mayor y -1 si el segundo es mayor`   
