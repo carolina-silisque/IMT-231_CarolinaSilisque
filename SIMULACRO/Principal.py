@@ -34,7 +34,6 @@ while True:
     elif opcion == 6 :
         print("Gracias por usar el programa, Hasta luego!")
         break
-
     else:
         print("Opcion no valida. Intente nuevamente.")
 

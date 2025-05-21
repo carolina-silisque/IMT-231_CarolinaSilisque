@@ -11,5 +11,4 @@ def num_entre_3 (n):
         if i % 3 == 0 or str(i).endswith('3'):
             contador += 1
 
-    
     print(f"Hay {contador} números entre 1 y {n} que son divisibles por 3 o terminan en 3.\n")
