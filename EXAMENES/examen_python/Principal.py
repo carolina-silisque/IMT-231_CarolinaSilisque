@@ -1,4 +1,4 @@
-#  from Funciones import .. 
+from Funciones import suma_divisores
 
 while True:
     print("--------   MENU DE OPCIONES   -------")
@@ -14,7 +14,7 @@ while True:
 
     if opcion == 1:
        num = int(input("Ingrese un número: "))
-    #    num_entre_3(num)
+       suma_divisores(num)
        
 
     elif opcion == 2:
