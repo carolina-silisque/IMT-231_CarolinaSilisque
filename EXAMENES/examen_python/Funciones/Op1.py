@@ -1,7 +1,9 @@
-# Opción 1:
+# pción 1:
 # Función que reciba un número entero positivo N
 # y calcule la suma de todos sus divisores propios (números 
 # menores que N que lo dividen exactamente).
+
+
 def suma_divisores(n):
 
     suma = 0

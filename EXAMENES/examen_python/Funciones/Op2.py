@@ -3,17 +3,17 @@
 #Ejemplo para N = 4:
 
 # def triangulo_alfabeto(num):
-num = int(input("ingrese un numero "))
+num= int(input('ingrese el numero de filas(altura) que tendra la piramide: \n'))
+        # piramide_asteriscos(filas)
 if num <= 0:
-    print("La altura debe ser un número positivo.")
-    
-
-letras = str.ascii_uppercase 
+        print("La altura debe ser un número positivo.")
+        
+abecedario = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 for i in range(1, num + 1):
-       
-    print(" ".join(letras[:i]))
+        linea = ""
+        for j in range(i):
+            linea += abecedario
+        print(linea)
+
 print("\n")  
-
-
-    
-    
+        

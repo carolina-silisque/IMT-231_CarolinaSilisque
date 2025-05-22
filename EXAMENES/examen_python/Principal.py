@@ -1,4 +1,4 @@
-from Funciones import suma_divisores, contar_primos
+from Funciones import suma_divisores, contar_primos,fibonacci_inverso
 
 while True:
     print("--------   MENU DE OPCIONES   -------")
@@ -27,7 +27,7 @@ while True:
 
     elif opcion == 4:
         num = int(input("¿Cuántos términos de Fibonacci querés ver? "))
-    #    contar_primos(num)
+        fibonacci_inverso(num)
 
                                 
     elif opcion == 5 :
