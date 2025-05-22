@@ -1,4 +1,4 @@
-from Funciones import suma_divisores
+from Funciones import suma_divisores, contar_primos
 
 while True:
     print("--------   MENU DE OPCIONES   -------")
@@ -18,15 +18,15 @@ while True:
        
 
     elif opcion == 2:
-        filas= int(input('ingrese el numero de filas(altura) que tendra la piramide\n'))
+        filas= int(input('ingrese el numero de filas(altura) que tendra la piramide: \n'))
         # piramide_asteriscos(filas)
 
     elif opcion == 3:
-        num = int (input('ingrese un numero '))
-        # serie_alternada(num)
+        N = int(input("ingrese un numero para saber los primeros N numeros primos: \n"))  
+        contar_primos(N)
 
     elif opcion == 4:
-       num = int(input("Ingrese un número: "))
+        num = int(input("¿Cuántos términos de Fibonacci querés ver? "))
     #    contar_primos(num)
 
                                 
