@@ -1,9 +1,9 @@
 from Funciones import num_entre_3, piramide_asteriscos, serie_alternada
+from Funciones import contar_primos
 
-print("--------   MENU DE OPCIONES   -------")
 
 while True:
-    
+    print("--------   MENU DE OPCIONES   -------")
     print("1. Contar cuántos números entre 1 y N son divisibles por 3 **o** terminan en 3.")
     print("2. Imprimir una pirámide de asteriscos de altura N.")
     print("3. Dado un número N, mostrar la secuencia de los primeros N términos de la serie: 1, -2, 3, -4, 5, -6, ...")
@@ -28,8 +28,11 @@ while True:
     elif opcion == 3:
         num = int (input('ingrese un numero '))
         serie_alternada(num)
+
     elif opcion == 4:
-       n1 = int(input("Ingrese un número: "))
+       num = int(input("Ingrese un número: "))
+       contar_primos(num)
+
     elif opcion == 5:
         n1 = int(input("Ingrese un número: "))
 
