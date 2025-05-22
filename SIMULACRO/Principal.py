@@ -1,4 +1,4 @@
-from Funciones import num_entre_3,piramide_asteriscos 
+from Funciones import num_entre_3, piramide_asteriscos, serie_alternada
 
 print("--------   MENU DE OPCIONES   -------")
 
@@ -26,7 +26,8 @@ while True:
         piramide_asteriscos(filas)
 
     elif opcion == 3:
-        n1 = int(input("Ingrese un número: "))
+        num = int (input('ingrese un numero '))
+        serie_alternada(num)
     elif opcion == 4:
        n1 = int(input("Ingrese un número: "))
     elif opcion == 5:
