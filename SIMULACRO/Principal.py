@@ -1,5 +1,5 @@
 from Funciones import num_entre_3, piramide_asteriscos, serie_alternada
-from Funciones import contar_primos
+from Funciones import contar_primos,es_palindromo,pedir_numero_positivo
 
 
 while True:
@@ -34,11 +34,12 @@ while True:
        contar_primos(num)
 
     elif opcion == 5:
-        n1 = int(input("Ingrese un número: "))
-
+        num = pedir_numero_positivo("Ingrese un número positivo: ")
+        es_palindromo(num)
+                                
     elif opcion == 6 :
         print("Gracias por usar el programa, Hasta luego!")
         break
     else:
-        print("Opcion no valida. Intente nuevamente.")
+        print("Opcion no valida. Intente nuevamente.\n")
 
