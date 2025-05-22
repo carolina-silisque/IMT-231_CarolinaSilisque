@@ -3,19 +3,4 @@
 
 
 def fibonacci(n):
-    a = 0
-    b = 1
-    serie = []
-    for i in range(n):
-        print(a, end=" ")
-        a, b = b, a + b  
-        serie.append(a)
-        a, b = b, a + b
-        for num in reversed(serie):
-            print(num, end=" ")
-            a, b = b, a + b  # intercambio: el nuevo "a" es el anterior "b", el nuevo "b" es a+b
-# pedir al usuario:# intercambio: el nuevo "a" es el anterior "b", el nuevo "b" es a+b
-# pedir al usuario:
-        
-num = int(input("¿Cuántos términos de Fibonacci querés ver? "))
-fibonacci(num)
+   
